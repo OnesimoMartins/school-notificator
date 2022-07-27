@@ -15,7 +15,6 @@ import ao.notificatorapp.domain.repository.ProfessorRepository;
 
 @Service
 public class ProfessorService {
-
 	
 	@Autowired private ProfessorRepository profs;
 	
@@ -32,8 +31,6 @@ public class ProfessorService {
 	
 	@Transactional
 	public TestResultRresponse setStudentTestResult(Long profId, TestResult result ) {
-	
-		System.out.println("!!!!! "+profId+"!!!!!! em "+result);
 		
 		var prof=this.getProfessorByIdOrFail(profId);
 		

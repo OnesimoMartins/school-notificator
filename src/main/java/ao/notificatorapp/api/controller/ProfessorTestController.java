@@ -22,8 +22,8 @@ public class ProfessorTestController {
 	@Autowired
 	private ProfessorService profService;
 	
-	@PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE
-			    ,produces = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE,
+			produces = MediaType.APPLICATION_JSON_VALUE)
 
 	public TestResultRresponse postTest(@RequestBody @Valid TestResultInput result,
 			@PathVariable Long idProfessor) {
